@@ -1,5 +1,4 @@
 from .base_page import BasePage
-from selenium import webdriver
 from .locators import LoginPageLocators
 
 
