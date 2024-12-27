@@ -29,6 +29,13 @@ class ProductPage(BasePage):
     def get_success_message_price(self):
         return self.browser.find_element(*ProductPageLocators.SUCCESS_MESSAGE_PRODUCT_PRICE).text
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+
+
+
 
 
 
